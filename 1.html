@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+		function ex1(toConvert, baseToConvertFrom, baseToConvertTo) {
+		    if ((toConvert && baseToConvertTo) > 2 || (toConvert && baseToConvertTo) < 36)
+
+		        return parseInt(toConvert, baseToConvertFrom).toString(baseToConvertTo);
+		}
+		console.log(ex1('E164', 16, 8))
+		console.log(ex1(1000, 2, 8))
+
+	</script>
+</body>
+</html>

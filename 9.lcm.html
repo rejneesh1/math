@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+		function ex9(x, y) {
+		    if (!y) return y === 0 ? x : NaN;
+		    return ex9(y, x % y);
+		}
+
+		function ex10(x, y) {
+
+		    return x * y / ex9(x, y);
+		}
+		console.log(ex10(3, 15));
+		console.log(ex10(10, 15));
+
+	</script>
+</body>
+</html>

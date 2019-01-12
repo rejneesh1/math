@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+		function ex15(nr) {
+		    var res = false;
+		    if (nr === parseInt(nr, 10)) {
+		        res = true;
+		    }
+		    return res;
+		}
+		console.log(ex15(23));
+		console.log(ex15(4e2));
+		console.log(ex15(NaN));
+		console.log(ex15(23.75));
+		console.log(ex15(-23));
+
+	</script>
+</body>
+</html>
